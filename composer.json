@@ -1,0 +1,32 @@
+{
+    "name": "tazz/laravel-google-auth-manager",
+    "description": "Google Authenticator integration for Laravel with Breeze support",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tazz\\GoogleAuthManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Tazz",
+            "email": "tzatwork@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "pragmarx/google2fa-laravel": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tazz\\GoogleAuthManager\\GoogleAuthServiceProvider"
+            ],
+            "aliases": {
+                "GoogleAuth": "Tazz\\GoogleAuthManager\\Facades\\GoogleAuth"
+            }
+        }
+    }
+} 
